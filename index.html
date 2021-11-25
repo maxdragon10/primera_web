@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang-"en">
+<head>
+	<title></title>
+</head>
+<body>
+	
+	<h1>noticias de la naturalesa</h1>
+	<!-- font awesome -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!-- font oswald -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet"> 
+
+	<!-- custom cs-->
+	<link rel="stylesheet" type="text/css" href="">
+
+
+	<style type="text/css">
+		* {
+			box-sizing: border-box;
+			margin: 0
+			padding: 0
+		}
+
+		body {
+			background: #000000;
+			color: #ffffff;
+            background-color: #4c4c4c;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%2331bd62' fill-opacity='0.72' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
+			}
+			
+			a{
+				color: #ffffff;
+				text-decoration: none;
+
+			}
+			ul {
+				list-style: none;
+			}
+			.container {
+				width: 90%;
+				margin: auto;
+			}
+
+			/* navigation */
+			.nav-main {
+				font-size: 17px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				height: 60px;
+				padding: 20px 0;
+			}
+
+			.nav-brand {
+				width: 50px;
+			}
+
+			/* nav left */
+			.nav-main ul {
+				display: flex;  
+
+}
+      
+      .nav-main ul li {
+             padding: 10px;
+
+      }
+
+      .nav.main ul li a:hover {
+      	border-bottom: 2px solid #ffffff;
+      }
+
+      .nav-main ul.nav-menu {
+
+      	flex: 1;
+      	margin-left: 20px;
+      }
+      /*showcase*/
+      hr {
+      	   margin: 10px 0;
+      }
+     
+
+     .showcase {
+
+      	width: 100%;
+      	height: 550px;
+      	background: url('./img/IMAGEN1.png') no-repeat center center/cover;
+      	padding-bottom: 50px;
+      	margin-bottom: 20px;
+      	display: flex;
+      	flex-direction: column;
+      	align-items: center;
+      	justify-content: flex-end;
+ 
+
+      }
+       .btn {
+       	 cursor: pointer;
+       	 display: inline-block;
+       	 border: 0;
+       	 font-weight: bold;
+       	 padding: 10px 20px;
+       	 background: #262626;
+       	 color: #ffffff;
+       	 font-size: 15px;
+       	 border: 1px solid #fff;
+       	 margin: 10px 0;
+       }
+
+       .btm:hover {
+
+       	      opacity: .7;
+       } 
+
+       .showcase h2,
+       .showcase p {
+       	   margin-bottom: 10px;
+       }
+
+       /* news cards */
+       .news-cards {
+            display: grid; 
+            grid-template-columns: repeat(4, 1fr);
+            gap:25px;
+            margin: 10px 0;
+
+       }
+
+
+       .news-cards img {
+       	  width: 100%;
+       	  height: 180px; 
+
+       }
+
+       .news-cards h3 {
+       	   font-size: 20px;
+       	   margin: 10px 0;
+       }
+
+       .news-cards a {
+       	   padding: 10px 0;
+       	   color: #f2f2f2;
+       	   text-transform: uppercase;
+       	   display: inline-block;
+       	   font-weight: bold;
+       }
+
+       .news-cards a:hove {
+       	    text-decoration: underline;
+       }
+
+         /* cards banner one*/
+       .cards-banner-one {
+       	     width: 100%;
+       	     height: 350px;
+       	     background: url('./img/IMAGEN10.jpg') no-repeat center center/cover;
+       	     margin-bottom: 40px;
+       	}
+
+       	.cards-banner-one .content {
+       		width: 40%;
+       		padding: 90px 0 0 30px;
+       		color: #ffffff;
+       	}
+
+       	.cards-banner-one p,
+       	.cards-banner-one h2 {
+       		margin: 10px 0 20px 0;
+       	}
+
+       	/* cards banner two */
+       	.cards-banner-two {
+       		width: 100%;
+       		height: 350px;
+            background: url('./img/IMAGEN11.jpg') no-repeat center center/cover;
+       	}
+
+       	.cards-banner-two .content {
+       		width: 50%;
+       		padding: 100px 0 0 30px;
+       	}
+
+       	/* social */
+       	.social {
+          margin: 50px;
+       	}	
+
+       	.social p {
+       		text-align: center;
+       		font-size: 30px;
+       		margin-bottom: 20px;
+       	}
+
+       	.links{
+           display: flex;
+           align-items: center;
+           justify-content: center;
+       	}
+
+       	.links a {
+            margin: 0  30px;
+
+       	}
+
+       	.links a i {
+       		font-size: 3rem;
+       	}
+
+       	/* footer links */
+       	.footer-links {
+       		background: #2f3640;
+       		color: #616161;
+       		font-size: 12px;
+       		padding: 35px 0;
+       	}
+
+       	.footer-container {
+       		display: grid;
+       		grid-template-columns: repeat(4, 1fr);
+       		gap: 10px;
+       		align-items: flex-start;
+       		justify-content: center;
+       	}
+
+       	.footer-container ul {
+       		margin: 0 auto;
+       	}
+
+       	.footer-container ul li {
+       		line-height: 2.8;
+       	}
+
+       	.footer {
+       		background: #2f3640;
+       		color: #616161;
+       		font-size: 12px;
+       		padding: 20px 0;
+       		text-align: center;
+       		padding-bottom: 20px;
+       	}
+
+       		
+
+
+
+
+	</style>
+       	
+
+</body>
+</html>
+<body>
+	<div class="container">
+
+	
+	<nav class="nav-main"> 
+
+		<img src="img/logo4.png" alt="technews logo4" class="nav-brand">
+		<ul class="nav-menu">
+			
+			<li>
+				<a href="#">Contactanos</a>
+			</li>
+			<li>
+				<a href="#">Dame dinero</a>
+			</li>
+			<li>
+				<a href="#">Siguenos en Facebook</a>
+			</li>
+			<li>
+				<a href="#">Siguenos en Instagram</a>
+			</li>
+			<li>
+				<a href="#">Siguenos en Twitter</a>
+			</li>
+			<li>
+				<a href="#">Matame porfa</a>
+			</li>
+			<li>
+				<a href="#">Danos dinero AHORA</a>
+			</li>
+			
+		</ul>
+		
+    </nav>
+    <hr>
+
+    <!-- showcase -->
+    <header class="showcase">
+    	<h2>ULTIMAS NOTICIAS</h2>
+    	<p>Durante la pandemia cerca del 84% de los países ha registrado mejoras en la calidad del aire, mientras que el denominado "efecto cuarentena" ha significado la disminución del 15% de concentración de material particulado en Santiago. Pese a ello, especialistas del Programa Transdisciplinario en Medio Ambiente (PROMA) hacen un llamado a no relajarse, ya que existen otras fuentes contaminantes que afectan la salud de las personas.</p>
+    	<a href="https://www.uchile.cl/noticias/176877/especialistas-uch-alertan-los-peligros-de-la-contaminacion-atmosferica" class="btn">Leer más<i class="fas fa-angle-double-right"></i></a>
+
+
+
+    </header>
+
+    <!-- news cards -->
+    <div class="news-cards">
+    
+    	 
+       <div>
+        	<img src="img/IMAGEN2.webp" alt="IMAGEN2">
+        	<h3>La contaminación marina</h3>
+        	<p>Debido a la inmensidad y profundidad de los océanos, hasta hace poco el hombre creía que podría utilizarlos para verter basura y sustancias químicas en cantidades ilimitadas sin que esto tuviera consecuencias importantes. Los partidarios de continuar con los vertidos en los océanos incluso tenían un eslogan: «La solución a la contaminación es la dilución.»</p>
+        	<a href="https://www.nationalgeographic.es/medio-ambiente/la-contaminacion-marina">Leer más<i class="fas fa-angle-double-right"></i></a>
+        </div>
+        <div>
+        	<img src="img/IMAGEN3.jpg" alt="IMAGEN 3">
+        	<h3>La degradación de los bosques: por qué afecta a las personas y la vida silvestre</h3>
+        	<p>La deforestación y la degradación forestal son temas urgentes relacionados con los bosques de nuestro planeta: cerca del 47% de los bosques del mundo enfrenta un alto riesgo de deforestación o degradación para el año 2030. Si bien ambas dañan la salud de los bosques, existe una diferencia entre la deforestación y la degradación forestal.</p>
+        	<a href="https://www.amazoniasocioambiental.org/es/radar/deforestacion-cuando-los-bosques-se-queman/">Leer más<i class="fas fa-angle-double-right"></i></a>
+        </div>
+        <div>
+        	<img src="img/IMAGEN4.jpg" alt="IMAGEN 4">
+        	<h3>¿Qué es la contaminación ambiental?</h3>
+        	<p>Por tierra, aire y agua, los agentes contaminantes producidos por el ser humano perjudican a los diferentes entornos naturales. Conocer las causas de la contaminación ambiental es el primer paso para poder evitar el deterioro del planeta y tomar así las acciones oportunas para construir un futuro más sostenible.</p>
+        	<a href="https://www.fundacionaquae.org/causas-contaminacion-ambiental/">Leer más<i class="fas fa-angle-double-right"></i></a>
+        </div>
+        <div>
+        	<img src="img/IMAGEN5.jpg" alt="IMAGEN5">
+        	<h3>CONTAMINACIÓN ATMOSFÉRICA </h3>
+        	<p>La contaminación atmosférica es la presencia que existe en el aire de pequeñas partículas o productos secundarios gaseosos que pueden implicar riesgo, daño o molestia para las personas, plantas y animales que se encuentran expuestas a dicho ambiente.</p>
+        	<a href="http://www.ideam.gov.co/web/contaminacion-y-calidad-ambiental/contaminacion-atmosferica">Leer más<i class="fas fa-angle-double-right"></i></a>
+        </div>
+         
+      </div>   
+
+
+
+      <!-- news cards -->
+      <div class="news-cards">
+      </div>
+
+      <section class="cards-banner-one">
+    		<div class="content">
+    			<h2>El problema de la tala indiscriminada de árboles en los bosques</h2>
+    			<p>La deforestación es un grave problema para la salud del planeta que nos afecta a todos y, aunque los intentos por frenarla logran discretos resultados, no consiguen revertir la tendencia.</p>
+    			<a href="https://www.ecologiaverde.com/el-problema-de-la-tala-indiscriminada-de-arboles-en-los-bosques-55.html" class="btn">Leer más<i class="fas fa-angle-double-right"></i></a>
+    			
+    		</div>
+    		
+    	</section>
+
+
+
+    	<!-- news cards -->
+    <div class="news-cards">
+    
+    	 
+       <div>
+        	<img src="img/IMAGEN6.jpg" alt="IMAGEN 6">
+        	<h3>Contaminación Térmica</h3>
+        	<p>Se conoce como contaminación térmica o polución térmica a una forma de deterioro del medio ambiente, especialmente del agua (ya que el aire disipa mucho más rápidamente el calor).</p>
+        	<a href="https://www.caracteristicas.co/contaminacion-termica/">Leer más<i class="fas fa-angle-double-right"></i></a>
+        </div>
+        <div>
+        	<img src="img/IMAGEN7.jpg" alt="IMAGEN 7">
+        	<h3>Contaminación visual: causas, consecuencias y soluciones</h3>
+        	<p>La contaminación visual es todo aquello que afecta o perturba la visualización de una determinada zona o rompe la estética del paisaje. Por desgracia cada vez nos encontramos más con este problema, tanto en las grandes ciudades como en las zonas rurales. El cerebro humano tiene una determinada capacidad de absorción de datos que se ve superada por la enorme cantidad de elementos "no naturales" en el paisaje, que además van cambiando constantemente</p>
+        	<a href="https://www.ecologiaverde.com/contaminacion-visual-causas-consecuencias-y-soluciones-32.html">Leer más<i class="fas fa-angle-double-right"></i></a>
+        </div>
+        <div>
+        	<img src="img/IMAGEN8.jpg" alt="IMAGEN 8">
+        	<h3>La contaminación del suelo, sus efectos sobre nuestro futuro y qué podemos hacer para reducirla</h3>
+        	<p>Cuando hablamos de contaminación tendemos a alzar la vista, pero este problema no afecta solo a nuestros cielos. Los suelos, que acogen los cultivos de frutas, verduras u hortalizas, también sufren las consecuencias y sus efectos llegan hasta nosotros a través, por ejemplo, de los alimentos anteriormente mencionados. ¡Ha llegado el momento de cuidar la tierra que yace bajo nuestros pies!</p>
+        	<a href="https://www.iberdrola.com/medio-ambiente/contaminacion-del-suelo-causas-efectos-soluciones">Leer más<i class="fas fa-angle-double-right"></i></a>
+        </div>
+        <div>
+        	<img src="img/IMAGEN9.jpg" alt="IMAGEN 9")  
+        	<h3>¿QUÉ ES LA CONTAMINACIÓN LUMÍNICA?</h3>
+        	<p>La contaminación lumínica corresponde a la alteración de la oscuridad natural de la noche, provocada por luz desaprovechada, innecesaria o inadecuada, generada por el alumbrado de exteriores, la cual genera impactos en la salud y en la vida de los seres vivos.</p>
+        	<a href="https://luminica.mma.gob.cl/que-es-la-contaminacion-luminica/">Leer más<i class="fas fa-angle-double-right"></i></a>
+        </div>
+         
+      </div>  
+
+      <section class="cards-banner-two">
+          <div class="content">
+          	 <h2>La contaminación acústica, ¿cómo reducir el impacto de una amenaza invisible?</h2>
+          	 <p>La contaminación atmosférica no es la única que tiene efectos perjudiciales para los seres vivos del planeta. La contaminación acústica, según la Organización Mundial de la Salud (OMS), es uno de los factores ambientales que provoca más problemas de salud.</p>
+          	<a href="#" class="btn">laern more <i class="fas fa-angle-double-right"></i></a>
+          </div>
+      </section> 
+
+      <section class="social">
+      	<p>follow technews</p>
+      	<div class="links">
+      		<a href="https://www.facebook.com/impudahuel/">
+      			<i class="fab fa-facebook-f"></i>
+      		</a>
+      		<a href="https://twitter.com/impudahuel/status/1177260501128089600">
+      			<i class="fab fa-twitter"></i>
+      		</a>
+      		<a href="https://www.instagram.com/mpudahuel/?hl=es">
+      			<i class="fab fa-instagram"></i>
+      		</a>	
+      	</div>
+      </section>
+
+      <div class="footer-links">
+      	<div class="footer-container">
+      		<ul>
+      			<li>
+      				<a href="#">
+      					<h3>title one</h3>
+      				</a>
+      			</li>
+      			<li>
+      				<a href="#">blockchain</a>
+      			</li>
+      			<li>
+      				<a href="#">blockchain</a>
+      			</li>
+      			<li>
+      				<a href="#">blockchain</a>
+      			</li>
+      			<li>
+      				<a href="#">blockchain</a>
+      			</li>
+      			<li>
+      				<a href="#">blockchain</a>
+      			</li>
+      			<li>
+      				<a href="#">blockchain</a>
+      			</li>
+      		</ul>
+      			<ul>
+      			<li>
+      				<a href="#">
+      					<h3>title one</h3>
+      				</a>
+      			</li>
+      			<li>
+      				<a href="#">blockchain</a>
+      			</li>
+      			<li>
+      				<a href="#">blockchain</a>
+      			</li>
+      			<li>
+      				<a href="#">blockchain</a>
+      			</li>
+      			<li>
+      				<a href="#">blockchain</a>
+      			</li>
+      			<li>
+      				<a href="#">blockchain</a>
+      			</li>
+      			<li>
+      				<a href="#">blockchain</a>
+      			</li>
+      		</ul>
+      			<ul>
+      			<li>
+      				<a href="#">
+      					<h3>title one</h3>
+      				</a>
+      			</li>
+      			<li>
+      				<a href="#">blockchain</a>
+      			</li>
+      			<li>
+      				<a href="#">blockchain</a>
+      			</li>
+      			<li>
+      				<a href="#">blockchain</a>
+      			</li>
+      			<li>
+      				<a href="#">blockchain</a>
+      			</li>
+      			<li>
+      				<a href="#">blockchain</a>
+      			</li>
+      			<li>
+      				<a href="#">blockchain</a>
+      			</li>
+      		</ul>
+      			<ul>
+      			<li>
+      				<a href="#">
+      					<h3>title one</h3>
+      				</a>
+      			</li>
+      			<li>
+      				<a href="#">blockchain</a>
+      			</li>
+      			<li>
+      				<a href="#">blockchain</a>
+      			</li>
+      			<li>
+      				<a href="#">blockchain</a>
+      			</li>
+      			<li>
+      				<a href="#">blockchain</a>
+      			</li>
+      			<li>
+      				<a href="#">blockchain</a>
+      			</li>
+      			<li>
+      				<a href="#">blockchain</a>
+      			</li>
+      		</ul>
+      	</div>
+      </div>
+
+      <footer class="footer">
+      	<h3>tech news copyright</h3>
+      </footer>
+
+</body>
